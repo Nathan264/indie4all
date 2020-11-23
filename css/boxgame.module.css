@@ -1,0 +1,51 @@
+.gameCarrousel{
+    float: left;
+    margin-right: 100px;
+}
+
+.gameCarrousel img {
+    width: 180px;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boxGame {
+    opacity: 0.7;
+    transition: 0.5s;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.boxGame:hover {
+    opacity: 1;
+}
+
+.boxGame img{
+    width: 350px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.boxGame p {
+    font-size: 18px;
+    color: white;
+}
+
+.searchedGame {
+    display: grid;
+    grid-template-columns: 25% 35% 20% 20%;
+    padding: 10px;
+    color: white;
+    background-color: #170429;
+    border: 1px solid #130620;
+    border-radius: 4px;
+    cursor: pointer;
+    height: min-content;
+}
+
+.searchedGame img {
+    width: 140px;
+    height: 80px;
+    border-radius: 5px;
+}

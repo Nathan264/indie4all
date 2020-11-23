@@ -1,0 +1,53 @@
+.sidebar {
+    width: 0px;
+    min-height: 550px;
+    background-color: #381063;
+    position: fixed;
+    top: 150px;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.sbBtn {
+    width: 100px;
+    top: 400px;
+    left: -40px;
+    position: fixed;
+    transform: rotate(90deg);
+    background-color: #381063;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    transition: 0.5s;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover .sbBtn {
+    left: 160px;
+}
+
+.sbContent {
+    padding: 10px;
+}
+
+.sbList {
+    list-style: none;
+    padding: 10px;
+}
+
+.sbList li {
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.sbList li a {
+    text-decoration: none;
+    color: white;
+}

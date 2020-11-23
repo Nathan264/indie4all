@@ -1,0 +1,257 @@
+.main {
+    min-height: 800px;
+    background-color: #100040;
+    display: grid;
+    row-gap: 120px;
+    justify-content: center;
+    padding: 100px;
+    grid-template-columns: 1000px;
+}
+
+.main label {
+    font-size: 20px;
+    color: white;
+    margin-left: -20px;
+    margin-bottom: -50px;
+}
+
+.imgGallery {
+    overflow-x: scroll;
+}
+
+.imgGallery img{
+    width: 700px;
+    height: 400px;
+    border-radius: 4px;
+}
+
+.imgGallery ul {
+    min-width: max-content;
+    list-style: none;
+}
+
+.imgGallery ul li {
+    float: left;
+    margin: 0px 160px 50px 100px;
+}
+
+.imgGallery::-webkit-scrollbar{
+    background-color: #110536;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.imgGallery::-webkit-scrollbar-thumb {
+    background-color: #1d0e4b;
+    border-radius: 10px;
+}
+
+.infoGame {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px;
+    color: white;
+    margin-left: -10px;
+    padding-bottom: 20px;
+    width: 790px;
+    border-radius: 2px;
+    border:1px solid #000429;
+    background-color: #180330;
+}
+
+.infoGame .generalInfo {
+    display: grid;
+    row-gap: 30px;
+    padding-left: 15px;
+}
+
+.infoGame .generalInfo p {
+    font-size: 18px;
+}
+
+.infoGame .generalInfo p span {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.infoGame label {
+    font-size: 20px;
+}
+
+.infoGame .sinopse p {
+    padding-top: 20px;
+}
+
+.infoGame .sinopse {
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.infoGame .reqSys {
+    width: 750px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    margin-bottom: 30px;
+}
+
+.infoGame .reqSys label {
+    grid-column: 1 /span 2;
+}
+
+.infoGame .reqSys ul {
+    list-style: none;
+    margin-top: 45px;
+}
+
+.infoGame .reqSys ul:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-15px;
+}
+
+.avaliations {
+    display: grid;
+    row-gap: 60px;
+    padding: 25px;
+}
+
+.avaliations .comment {
+    border: 1px solid #000429;
+    background-color: #180330;
+    padding: 25px;
+    width: 700px;
+    color: white;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    row-gap: 20px;
+    min-height: 150px;
+}
+
+.avaliations .comment p:first-of-type {
+    margin-left: -10px;
+    padding-top: 10px;
+}
+
+.avaliations .comment .stars {
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.avaliations .comment p:last-of-type {
+    grid-column: span 2;
+}
+
+.avaliations .comment img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+.avaliations .comment form textarea {
+    background: #110536;
+    border: 1px solid #000021;
+    padding: 10px;
+    resize: none;
+    width: 500px;
+    height: 120px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.avaliations .comment form button {
+    background: #110536;
+    border: 1px solid #000021;
+    width: 120px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.avaliations .comment form button:hover {
+    background-color: #000021;
+}
+
+.starRating {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+    margin-right: -35px;
+}
+
+.starRating input {
+    display: none;
+}
+
+.starRating label {
+    margin-left: 5px;
+    color: white;
+    position: relative;
+    cursor: pointer
+}
+
+.starRating label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.starRating > label:hover:before,
+.starRating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.starRating > input:checked ~ label:before{
+    opacity: 1;
+}
+
+.starRating:hover > input:checked ~ label:before{
+    opacity: 0.4;
+}
+
+
+.btnDownload {
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    background-color: #180330;
+    border: 1px solid #000021;
+    top: 90%;
+    left: 80%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.btnDownload:hover {
+    background-color: #000021;
+}
+
+.moderatorOptions {
+    position: fixed;
+    left: 2%;
+    top: 80%;
+    display: grid;
+    row-gap: 30px;
+}
+
+.moderatorOptions button {
+    width: 160px;
+    height: 50px;
+    background-color: #180330;
+    border: 1px solid #000021;
+    transition: 0.5s;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.moderatorOptions button:hover {
+    background-color: #000021;
+}

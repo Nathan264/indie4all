@@ -1,0 +1,67 @@
+.main {
+    min-height: 500px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 180px;
+    display: flex;
+    top: 120px;
+    justify-content: center;
+}   
+
+.main fieldset {
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid #000429;
+    background-color: #210141;
+}
+
+.main fieldset form {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    row-gap: 50px;
+    padding-top: 80px;
+}
+
+.main fieldset form input {
+    width: 300px;
+    padding: 5px;
+    height: 20px;
+    margin: 0 auto;
+    background: #110536;
+    border: 1px solid #000021;
+    color: white;
+    transition: 0.5s;
+}
+
+.main fieldset form input:focus,
+.main fieldset form input:hover {
+    background-color: #000021;
+    width: 320px;
+}
+
+.main fieldset form button {
+    width: 280px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 1px solid #000021;
+    background: #110536;
+    color: white;
+    transition: 0.5s;
+}
+
+.main fieldset form button:hover {
+    width: 300px;
+    background-color: #000021;
+}
+
+.main fieldset legend {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}

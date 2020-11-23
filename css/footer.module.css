@@ -1,0 +1,16 @@
+.footer {
+    height: 200px;
+    background-color: #1a031c;
+    display: flexbox;
+    padding: 20px 0px 0px 30px
+}
+
+.footer img {
+    width: 240px;
+    height: 100px;
+}
+
+.footer p {
+    color: white;
+    margin-left: 20px;
+}

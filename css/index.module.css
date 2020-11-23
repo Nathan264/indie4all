@@ -1,0 +1,57 @@
+.banner {
+    background-image: url('../public/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+}
+
+.boxCarrousel {
+    width: 100%;
+    height: 200px;
+    background-color: #1a031c;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+.boxCarrousel label {
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+
+.boxCarrousel ul {
+    list-style: none;
+    width: 500%;
+    padding: 40px;
+    position: relative;
+    left: -260px;
+    animation-name: carrousel;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carrousel {
+    0% {left: 20px;}
+    15% {left: -260px;}
+    30% {left: -540px;}
+    45% {left: -820px;}
+    60% {left: -1100px;}
+    75% {left: -1380px;}
+    100% {left: 20px;}
+}
+
+
+.mainGames {
+    background-color: #200240;
+    min-height: 900px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 0px 0px 50px;
+}
+
+.mainGames label {
+    grid-column: 1 / span 3;
+    font-size: 20px;
+    color: white;
+}

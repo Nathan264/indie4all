@@ -1,0 +1,70 @@
+.profile {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-auto-flow: column;
+    column-gap: 200px;
+    row-gap: 50px;
+    background-color: #180330;
+    border: 1px solid #000022;
+    border-radius: 2px;
+    padding: 20px;
+    text-align: center;
+    width: 810px;
+}
+
+.profile img:not(label) {
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.profile label {
+    grid-column: 1 / span 2;
+    margin-top: -70px;
+    margin-left: 440px;
+    max-width: min-content;
+    max-height: min-content;
+}
+
+.profile label img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.profile input {
+    width: 240px;
+    margin: 0 auto;
+    background-color: #000429;
+    border: 1px solid #000022;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.profile input:not(:disabled) {
+    color: white;
+}
+
+.profile button {
+    background-color: #000429;
+    border: 1px solid #000022;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+.profile button:hover {
+    background-color: #170429;
+    width: 220px;
+}
+
+.profile input[type='file'] {
+    display: none;
+}

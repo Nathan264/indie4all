@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'abel';
+    src: url('../public/font/Abel-Regular.ttf');
+}
+* {
+    outline: none;
+    margin: 0;
+    font-family: 'abel';
+}
+
+body {
+    background-color: #200240
+}

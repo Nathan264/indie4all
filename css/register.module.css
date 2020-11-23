@@ -1,0 +1,49 @@
+.divForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+    background-color: #000030;
+}
+
+.divForm fieldset {
+    background-color: #000010;
+    border: solid 2px #2e0066;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.divForm form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 40px;
+    align-items: center;
+}
+
+.divForm form input {
+    width: 200px;
+    color: white;
+    background: none;
+    border: 2px solid #2e0066;
+    border-radius: 2px;
+    padding: 10px;
+    transition: 0.55s;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.divForm form input:focus, 
+.divForm form input:hover:not([type='button']) {
+    width: 240px;
+}
+
+.divForm form input[type='button']:hover {
+    cursor: pointer;
+    background-color:  #2e0066;
+    width: 220px;
+}

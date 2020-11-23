@@ -1,0 +1,167 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    background-color: #121212;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.boxUser {
+    width:80px;
+    height: 25px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 7px;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.25s;
+}   
+.boxUser:hover {
+    background-color: #381063;
+}
+
+.navbar label {
+    width: min-content;
+}
+
+#dpdBtn {
+    display: none;
+}
+
+#dpdBtn:checked + .boxUser > .formLogin {
+    height: 140px;
+    padding: 15px;
+}
+
+#dpdBtn:checked + .boxUser > .dpdUser {
+    height: 40px;
+    padding: 10px 15px 10px 15px;
+}
+
+#dpdBtn:checked + .boxUser{
+    background-color: #381063;
+}
+
+.boxLogo {
+    margin: -11px;
+}
+
+.boxSearch {
+    padding: 13px;
+}
+
+.logo {
+    height: 80px;
+    cursor: pointer;
+}
+
+.user {
+    height: 30px;
+    border-radius: 100px;
+}
+
+.dpdUser {
+    height: 0px;
+    padding: 0px 15px 0px 15px;
+    width: 120px;
+    overflow: hidden;
+    background-color: #381063;
+    border-radius: 10px 0px 10px 10px;
+    margin-left: -60px;
+    transition: 0.25s;
+}
+
+.dpdUser p {
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+    transition: 0.25s;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.dpdUser p:hover {
+    opacity: 1;
+}
+
+.formLogin {
+    height: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 200px;
+    overflow: hidden;
+    background-color: #381063;
+    border-radius: 10px 0px 10px 10px;
+    margin-left: -140px;
+    transition: 0.25s;
+}
+
+.formLogin p {
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+    transition: 0.25s;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.formLogin p:hover {
+    opacity: 1;
+}
+
+.inputLogin {
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: #1a033c;
+    border: 1px solid #181063;
+    color: white;
+    width: 150px;
+    font-size: 14px;
+}
+
+.btnLogin {
+    margin-top: 10px;
+    padding: 3px;
+    height: 25px;
+    width: 100px;
+    color: white;
+    background-color: #1a033c;
+    border: 1px solid #181063;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btnLogin:hover {
+    background-color: #181063;
+}
+
+.inputSearch {
+    background-image: url(../public/images/search2.png);
+    background-size: 20px;
+    background-position: 4px;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    border: none;
+    transition: 0.5s;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    padding-left: 32px
+}
+
+.inputSearch:hover {
+    width: 400px;
+}
+
+.inputSearch:focus {
+    width: 400px;
+}
