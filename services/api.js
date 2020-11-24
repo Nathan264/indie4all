@@ -8,7 +8,7 @@ if(process.browser && localStorage.tokenIndie4All) {
     token = null
 }
 
-const api = axios.create({ baseURL: 'http://localhost:3333', headers: {
+const api = axios.create({ baseURL: 'https://indie4allbe.herokuapp.com/', headers: {
     authorization: token
 } });
 export default api;
