@@ -12,6 +12,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "next start": "next start"
+    "start": "next start"
   }
 }
