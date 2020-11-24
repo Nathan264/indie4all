@@ -29,7 +29,7 @@ function Games() {
                     window.location = '/'
                 }
                 response.data.images.map((item, index) => {
-                    response.data.images[index] = `http://localhost:3333/static/images/${item}`;
+                    response.data.images[index] = `${api.defaults.baseURL}/static/images/${item}`;
                 })
                 response.data.rating = response.data.numberRt!==0? response.data.rating / response.data.numberRt: 0;
                 setGameData(response.data);
@@ -167,7 +167,7 @@ function Games() {
                             gameData.comments.map(item => {
                                 return (
                                     <div className={styles.comment} key={Math.random(1)}>
-                                        <img src={`http://localhost:3333/static/images/${item.user.userImage}`}></img>
+                                        <img src={`${api.defaults.baseURL}/static/images/${item.user.userImage}`}></img>
                                         <p> {item.user.username} </p>
                                         <p className={styles.stars}> {'★'.repeat(item.rating)} </p>
                                         <p> {item.text} </p>

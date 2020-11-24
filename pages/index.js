@@ -11,10 +11,10 @@ function Home() {
         const callApi = async () => {
             await api.get('/').then(response => {
                 response.data.recentlyAdded.map((item, index) => {
-                    response.data.recentlyAdded[index].images[0] = `http://localhost:3333/static/images/${item.images[0]}`
+                    response.data.recentlyAdded[index].images[0] = `${api.defaults.baseURL}/static/images/${item.images[0]}`
                 })
                 response.data.mostDownloaded.map((item, index) => {
-                    response.data.mostDownloaded[index].images[0] = `http://localhost:3333/static/images/${item.images[0]}`
+                    response.data.mostDownloaded[index].images[0] = `${api.defaults.baseURL}/static/images/${item.images[0]}`
                 })
                 setRecentlyAdded(response.data.recentlyAdded);
                 setMostDownloaded(response.data.mostDownloaded);

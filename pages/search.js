@@ -17,7 +17,7 @@ function Search() {
             params: parameters
         }).then(response => {
             response.data.games.map((item, index) => {
-                item.images[0] = `http://localhost:3333/static/images/${item.images[0]}`
+                item.images[0] = `${api.defaults.baseURL}/static/images/${item.images[0]}`
             });
             setGameList(response.data.games);
         });

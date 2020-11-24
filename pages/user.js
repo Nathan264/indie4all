@@ -106,7 +106,7 @@ function User() {
                                     modal.style.height= '100%';
                                     modal.style.paddingTop = '100px';
                                 }}>
-                                    <img src={`http://localhost:3333/static/images/${game.images[0]}`}></img>
+                                    <img src={`${api.defaults.baseURL}/static/images/${game.images[0]}`}></img>
                                     <p>{game.name}</p>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ function User() {
                         return (
                             <Link href={`http://localhost:3000/games/?name=${item.name}`}  key={Math.random(1)}>
                                 <div className={styles.boxgame}>
-                                    <img src={`http://localhost:3333/static/images/${item.images[0]}`}></img>
+                                    <img src={`${api.defaults.baseURL}/static/images/${item.images[0]}`}></img>
                                     <p>{item.name}</p>
                                 </div>
                             </Link>
