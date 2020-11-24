@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import Link from 'next/link';
 import api from '../services/api';
 import styles from '../css/user.module.css'
-import GameModal from '../components/GameModal';
+import GameModal from '../components/gameModal';
 import UserProfile from '../components/userProfile';
 
 function User() {
