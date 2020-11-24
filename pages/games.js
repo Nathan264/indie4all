@@ -47,7 +47,10 @@ function Games() {
             status: modResponse,
             name: gameData.name
         }).then(response => {
-            console.log(response);
+            if(response.data.nModified === 1) {
+                alert('Jogo liberado com sucesso'); 
+                window.location.href = '/';
+            }
         });
     }
 

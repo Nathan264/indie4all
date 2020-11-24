@@ -136,7 +136,7 @@ function GameModal(props) {
                             accept='image/*'
                         />
                         {
-                            game.images.length>0 ? (
+                            preview.length>0 ? (
                                 <div className={styles.galleryWrap}>
                                     <ul id='gallery'>
                                     {

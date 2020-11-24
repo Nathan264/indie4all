@@ -31,7 +31,8 @@ function Navbar() {
                 alert(response.data.message);
                 return
             }
-            response.data.user.userImage = `http://localhost:3333/static/images/${response.data.user.userImage}`
+            console.log(response.data)
+            response.data.user.userImage = `${api.defaults.baseURL}/static/images/${response.data.user.userImage}`
             localStorage.setItem('tokenIndie4All', JSON.stringify(response.data.token));
             localStorage.setItem('userInfoIndie4All', JSON.stringify(response.data.user));
             setUserInfo(JSON.parse(localStorage.userInfoIndie4All));
@@ -89,8 +90,6 @@ function Navbar() {
                             </form>
                         </div>
                     }
-                    
-                    
                 </div>
             </label>
 
