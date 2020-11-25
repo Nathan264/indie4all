@@ -9,10 +9,14 @@ function UserProfile() {
         moderator: '',
         birthDate: '',
         password: '',
-        confirmPwd: ''
+        confirmPwd: '',
+        userImage: 'default.png'
     });  
 
     const callApi = async () => {
+        if(!process.browser) {
+            return
+        }
         await api.get('/getUserInfo', {
             params: {
                 username: JSON.parse(localStorage.userInfoIndie4All).username
@@ -46,7 +50,7 @@ function UserProfile() {
             }
         }).then(response => {
             const storage = JSON.parse(localStorage.userInfoIndie4All);
-            storage.userImage = `http://localhost:3333/static/images/${response.data.userImage}`;
+            storage.userImage = `${response.data.userImage}`;
             localStorage.userInfoIndie4All = JSON.stringify(storage);
             console.log(localStorage.userInfoIndie4All)
         });
@@ -80,7 +84,7 @@ function UserProfile() {
 
     return (
         <div className={styles.profile}>
-            <img id='img-box' src='/images/default.png'/>
+            <img id='img-box' src={`${api.defaults.baseURL}/static/images/${user.userImage}`}/>
             <label htmlFor='img-user'><img src='/images/change.png' /></label>
             <input 
                 type='file' 

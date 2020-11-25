@@ -17,13 +17,17 @@ function Games() {
             return
         }
         const callApi = async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            console.log(name)
             const username = localStorage.userInfoIndie4All ?JSON.parse(localStorage.userInfoIndie4All).username: undefined;
             await api.get('/loadGame', {
                 params: {
-                    name: document.URL.slice(33),
+                    name,
                     username,
                 },
             }).then(response => {
+                console.log()
                 if(response.data.message) {
                     alert(response.data.message);
                     window.location = '/'
