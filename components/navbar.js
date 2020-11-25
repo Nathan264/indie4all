@@ -31,7 +31,7 @@ function Navbar() {
                 alert(response.data.message);
                 return
             }
-            response.data.user.userImage = `${api.defaults.baseURL}/static/images/${response.data.user.userImage}`
+            response.data.user.userImage = `${response.data.user.userImage}`
             localStorage.setItem('tokenIndie4All', JSON.stringify(response.data.token));
             localStorage.setItem('userInfoIndie4All', JSON.stringify(response.data.user));
             setUserInfo(JSON.parse(localStorage.userInfoIndie4All));
