@@ -27,7 +27,6 @@ function Games() {
                     username,
                 },
             }).then(response => {
-                console.log()
                 if(response.data.message) {
                     alert(response.data.message);
                     window.location = '/'
@@ -74,9 +73,7 @@ function Games() {
         await api.put('/addVisitOrDownload', {
             id: gameData._id,
             downloaded: true
-        }).then(response => {
-            console.log(response)
-        })
+        });
     }
 
     const makeComment = async () => {
