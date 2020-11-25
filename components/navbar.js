@@ -62,7 +62,7 @@ function Navbar() {
                         <div className={styles.dpdUser}>
                             <Link href={`/user`}><p>Perfil</p></Link>
                             <p onClick={e => {
-                                setUserInfo({userImage: '/images/sign-in-icon.png'});
+                                setUserInfo({userImage: 'sign-in-icon.png'});
                                 localStorage.clear();
                             }}>Sair</p>
                         </div>
