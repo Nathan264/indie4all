@@ -6,7 +6,7 @@ import styles from '../css/navbar.module.css';
 function Navbar() {
     const [userInfo, setUserInfo] = useState(
         {
-            userImage: '/images/sign-in-icon.png'
+            userImage: 'sign-in-icon.png'
         }
     );
     
