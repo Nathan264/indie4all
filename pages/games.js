@@ -19,7 +19,6 @@ function Games() {
         const callApi = async () => {
             const urlParams = new URLSearchParams(window.location.search);
             const name = urlParams.get('name');
-            console.log(name)
             const username = localStorage.userInfoIndie4All ?JSON.parse(localStorage.userInfoIndie4All).username: undefined;
             await api.get('/loadGame', {
                 params: {

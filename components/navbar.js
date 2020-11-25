@@ -55,7 +55,7 @@ function Navbar() {
             <label htmlFor={styles.dpdBtn}>
                 <input type='checkbox' id={styles.dpdBtn} />
                 <div className={styles.boxUser}>
-                    <img src={userInfo.userImage} id='userImg' className={styles.user}/>,
+                    <img src={`${api.defaults.baseURL}/static/images/${userInfo.userImage}`} id='userImg' className={styles.user}/>,
                     {
                         userInfo.username?
 
